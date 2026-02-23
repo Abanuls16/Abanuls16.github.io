@@ -725,29 +725,3 @@
 }
 
 
-
-
-
-
-
-
-@media (max-width: 768px) {
-
-    .main-content.realisations,
-    .main-content.contact-page,
-    .main-content.ap-page {
-        padding: 0;
-    }
-
-    .contact-section {
-        padding: 40px 20px;
-    }
-
-    .mentions-section {
-        padding: 40px 20px;
-    }
-
-    .ap-hero-content h1 {
-        font-size: 28px;
-    }
-}
