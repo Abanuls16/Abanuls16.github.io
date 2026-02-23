@@ -508,3 +508,274 @@ body {
     color: #222;
     letter-spacing: 0.5px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ============================= */
+/* RESPONSIVE */
+/* ============================= */
+
+@media (max-width: 1024px) {
+
+    /* Sidebar devient une barre en haut */
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 20px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    .sidebar h2 {
+        margin: 0;
+        font-size: 18px;
+    }
+
+    .sidebar nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .sidebar nav ul li {
+        margin: 0;
+    }
+
+    .sidebar nav ul li a {
+        padding: 6px 12px;
+        font-size: 13px;
+    }
+
+    /* Contenu principal prend toute la largeur */
+    .main-content {
+        margin-left: 0;
+        width: 100%;
+        padding: 16px;
+    }
+
+    .main-content.accueil {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    /* Apropos container passe en colonne */
+    .apropos-container {
+        flex-direction: column;
+        padding: 0 20px;
+        margin-top: 30px;
+        gap: 30px;
+    }
+
+    .apropos-container .left,
+    .apropos-container .right {
+        width: 100%;
+        padding-left: 0;
+        margin-right: 0;
+    }
+
+    /* Section SIO */
+    .sio-content {
+        margin-left: 0;
+        max-width: 100%;
+    }
+
+    .sio-image {
+        margin: 20px auto;
+        text-align: center;
+    }
+
+    .sio-image img {
+        width: 200px;
+    }
+
+    /* Certifications */
+    .certif-grid {
+        grid-template-columns: 1fr;
+        max-width: 100%;
+    }
+
+    /* Compétences */
+    .competences-subtitle {
+        margin-left: 20px;
+    }
+
+    .competences-desc {
+        margin-left: 20px;
+        max-width: 100%;
+    }
+
+    /* Sections pleine largeur */
+    .section-sio,
+    .section-certifications,
+    .section-competences {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 40px 20px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* Hero textes */
+    .apropos-hero-content h1,
+    .real-hero-content h1,
+    .contact-hero-content h1 {
+        font-size: 28px;
+    }
+
+    .apropos-hero-content p,
+    .real-hero-content p,
+    .contact-hero-content p {
+        font-size: 14px;
+    }
+
+    .apropos-hero-badges,
+    .real-hero-badges,
+    .contact-hero-badges {
+        gap: 8px;
+    }
+
+    .badge-apropos,
+    .badge,
+    .badge-contact {
+        font-size: 11px;
+        padding: 4px 10px;
+    }
+
+    /* Stats réalisations */
+    .real-stats {
+        flex-wrap: wrap;
+    }
+
+    .stat-card {
+        flex: 1 1 50%;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+
+    /* Grille réalisations */
+    .real-grid {
+        grid-template-columns: repeat(2, 160px);
+        gap: 20px;
+    }
+
+    .real-grid-center {
+        gap: 20px;
+    }
+
+    .real-card {
+        width: 160px;
+    }
+
+    /* Contact cards */
+    .contact-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-card {
+        width: 100%;
+        max-width: 360px;
+    }
+
+    /* Mentions légales */
+    .mentions-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mentions-card {
+        width: 100%;
+        max-width: 360px;
+    }
+
+    /* AP sous-pages */
+    .ap-infos {
+        flex-direction: column;
+    }
+
+    .ap-content {
+        padding: 20px;
+    }
+
+    .ap-docs-grid {
+        flex-direction: column;
+    }
+
+    .ap-doc-card {
+        width: 100%;
+    }
+
+    /* Sections */
+    .real-section {
+        padding: 40px 20px;
+    }
+
+    .real-titre-rouge {
+        font-size: 16px;
+        padding: 10px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    /* Accueil */
+    .hero-text .name {
+        font-size: 36px;
+        line-height: 40px;
+    }
+
+    .hero-text .welcome {
+        font-size: 20px;
+    }
+
+    /* Grille réalisations passe en 1 colonne */
+    .real-grid {
+        grid-template-columns: repeat(1, 200px);
+    }
+
+    /* Compétences */
+    .competences-grid {
+        gap: 12px;
+    }
+
+    .competence-card {
+        width: 110px;
+        padding: 16px 10px;
+    }
+
+    .competence-card img {
+        width: 50px;
+        height: 50px;
+    }
+
+    /* Certif cards */
+    .certif-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* Titres */
+    .section-sio h2,
+    .section-certifications h2,
+    .section-competences h2 {
+        font-size: 32px;
+    }
+}
