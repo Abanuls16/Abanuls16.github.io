@@ -132,6 +132,8 @@ body {
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    border-bottom: 3px solid transparent;
+    border-image: linear-gradient(90deg, #0d6efd, #D8532B, #a855f7) 1;
 }
 
 .apropos-hero::before {
@@ -154,6 +156,16 @@ body {
     border-radius: 50%;
     bottom: -120px;
     left: 60px;
+}
+
+.apropos-container h2::after {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: linear-gradient(90deg, #D8532B, #0d6efd);
+    margin-top: 8px;
+    border-radius: 2px;
 }
 
 .apropos-hero-overlay {
@@ -208,6 +220,10 @@ body {
     margin-top: 60px;
     padding: 0 60px;
     box-sizing: border-box;
+    border-bottom: 2px solid transparent;
+    border-image: linear-gradient(90deg, transparent, #e0e0e0, transparent) 1;
+    padding-bottom: 60px;
+
 }
 
 .apropos-container .left,
@@ -265,6 +281,18 @@ body {
     margin-top: 60px;
     align-self: stretch;
     box-sizing: border-box;
+    border-top: 3px solid transparent;
+    border-image: linear-gradient(90deg, transparent, #0d6efd, #D8532B, transparent) 1;
+}
+
+.sio-content h3::after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 2px;
+    background: linear-gradient(90deg, #D8532B, transparent);
+    margin-top: 6px;
+    border-radius: 2px;
 }
 
 .section-sio h2 {
@@ -352,6 +380,9 @@ body {
     flex-wrap: wrap;
     margin-top: 50px;
     margin-bottom: 20px;
+    border-top: 1px solid transparent;
+    border-image: linear-gradient(90deg, transparent, #e0e0e0, transparent) 1;
+    padding-top: 40px;
 }
 
 .sio-badge {
@@ -393,6 +424,8 @@ body {
     text-align: center;
     margin-top: 0;
     box-sizing: border-box;
+      border-top: 3px solid transparent;
+    border-image: linear-gradient(90deg, transparent, #a855f7, #0d6efd, transparent) 1;
 }
 
 .section-certifications h2 {
@@ -487,6 +520,18 @@ body {
     box-sizing: border-box;
     margin-top: 0;
     text-align: center;
+    border-top: 3px solid transparent;
+    border-image: linear-gradient(90deg, transparent, #00d4aa, #0d6efd, transparent) 1;
+}
+
+.competences-subtitle::after {
+    content: "";
+    display: block;
+    width: 35px;
+    height: 2px;
+    background: linear-gradient(90deg, #D8532B, transparent);
+    margin-top: 6px;
+    border-radius: 2px;
 }
 
 .section-competences h2 {
