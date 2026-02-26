@@ -223,7 +223,6 @@ body {
     border-bottom: 2px solid transparent;
     border-image: linear-gradient(90deg, transparent, #e0e0e0, transparent) 1;
     padding-bottom: 60px;
-
 }
 
 .apropos-container .left,
@@ -361,7 +360,7 @@ body {
 .sio-image {
     flex-shrink: 0;
     display: flex;
-    align-items: flex-end; /* ← aligne en bas */
+    align-items: flex-end;
     margin-top: auto;
     padding-bottom: 20px;
 }
@@ -369,8 +368,6 @@ body {
 .sio-image img {
     width: 260px;
 }
-
-
 
 /* Badges */
 .sio-badges {
@@ -424,7 +421,7 @@ body {
     text-align: center;
     margin-top: 0;
     box-sizing: border-box;
-      border-top: 3px solid transparent;
+    border-top: 3px solid transparent;
     border-image: linear-gradient(90deg, transparent, #a855f7, #0d6efd, transparent) 1;
 }
 
@@ -645,7 +642,7 @@ body {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 12px 20px;
+        padding: 16px 24px;
         flex-direction: row;
         flex-wrap: wrap;
         box-shadow: 0 4px 10px rgba(0,0,0,0.2);
@@ -655,7 +652,7 @@ body {
 
     .sidebar h2 {
         margin: 0;
-        font-size: 16px;
+        font-size: 22px;
         flex-shrink: 0;
     }
 
@@ -668,7 +665,7 @@ body {
     .sidebar nav ul {
         display: flex;
         flex-wrap: wrap;
-        gap: 4px;
+        gap: 6px;
         margin: 0;
         padding: 0;
         justify-content: flex-end;
@@ -679,8 +676,8 @@ body {
     }
 
     .sidebar nav ul li a {
-        padding: 6px 10px;
-        font-size: 12px;
+        padding: 8px 14px;
+        font-size: 13px;
     }
 
     .main-content {
@@ -817,7 +814,7 @@ body {
     }
 
     .sidebar h2 {
-        font-size: 15px;
+        font-size: 18px;
     }
 
     .sidebar nav {
@@ -830,8 +827,8 @@ body {
     }
 
     .sidebar nav ul li a {
-        font-size: 11px;
-        padding: 5px 8px;
+        font-size: 12px;
+        padding: 6px 10px;
     }
 
     .hero-text .name {
@@ -894,7 +891,7 @@ body {
 @media (max-width: 360px) {
 
     .sidebar h2 {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .sidebar nav ul li a {
