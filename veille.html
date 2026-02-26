@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio - Veille Technologique</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="veille.css">
+</head>
+<body>
+
+<div class="sidebar">
+    <h2>Alexandre</h2>
+    <nav>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="apropos.html">À propos de moi</a></li>
+            <li><a href="realisations.html">Réalisations Professionnelles</a></li>
+            <li><a href="veille.html" class="active">Veille</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</div>
+
+<div class="main-content veille-page">
+
+    <!-- HERO -->
+    <div class="veille-hero">
+        <div class="veille-hero-overlay"></div>
+        <div class="veille-hero-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+        <div class="veille-hero-content">
+            <div class="veille-tag">🔍 Veille Technologique — BTS SIO SISR</div>
+            <h1>Sécurité des Objets<br>Connectés <span class="highlight">IoT</span></h1>
+            <p>Analyse des menaces, vulnérabilités et bonnes pratiques autour des objets connectés</p>
+            <div class="veille-hero-stats">
+                <div class="veille-stat">
+                    <span class="veille-stat-number">15Md+</span>
+                    <span class="veille-stat-label">Appareils IoT en 2025</span>
+                </div>
+                <div class="veille-stat-divider"></div>
+                <div class="veille-stat">
+                    <span class="veille-stat-number">+300%</span>
+                    <span class="veille-stat-label">Cyberattaques IoT en 3 ans</span>
+                </div>
+                <div class="veille-stat-divider"></div>
+                <div class="veille-stat">
+                    <span class="veille-stat-number">98%</span>
+                    <span class="veille-stat-label">Trafic IoT non chiffré</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- INTRODUCTION -->
+    <div class="veille-section bg-white">
+        <div class="veille-section-inner">
+            <div class="veille-section-label">01 — Introduction</div>
+            <h2>Qu'est-ce que l'IoT ?</h2>
+            <div class="veille-intro-grid">
+                <div class="veille-intro-text">
+                    <p>L'<strong>Internet des Objets (IoT)</strong> désigne l'ensemble des objets physiques connectés à Internet : caméras de surveillance, thermostats intelligents, montres connectées, capteurs industriels, équipements médicaux, véhicules autonomes...</p>
+                    <p>Ces appareils collectent, transmettent et échangent des données en permanence, créant un réseau mondial d'une ampleur inédite. En 2025, on estime à plus de <strong>15 milliards</strong> le nombre d'appareils IoT connectés dans le monde.</p>
+                    <p>Mais cette explosion du nombre d'appareils connectés soulève une question critique : <strong>sont-ils sécurisés ?</strong> La réponse, dans la majorité des cas, est non.</p>
+                </div>
+                <div class="veille-intro-icons">
+                    <div class="iot-icon-grid">
+                        <div class="iot-icon-card">📷<span>Caméras</span></div>
+                        <div class="iot-icon-card">🌡️<span>Thermostats</span></div>
+                        <div class="iot-icon-card">⌚<span>Montres</span></div>
+                        <div class="iot-icon-card">🏭<span>Industrie</span></div>
+                        <div class="iot-icon-card">🏥<span>Médical</span></div>
+                        <div class="iot-icon-card">🚗<span>Véhicules</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MENACES -->
+    <div class="veille-section bg-blue">
+        <div class="veille-section-inner">
+            <div class="veille-section-label">02 — Menaces</div>
+            <h2>Les principales menaces IoT</h2>
+            <div class="menaces-grid">
+
+                <div class="menace-card">
+                    <div class="menace-icon">🦠</div>
+                    <h3>Botnets IoT</h3>
+                    <p>Des milliers d'appareils infectés sont regroupés en botnets pour lancer des attaques massives. Le célèbre botnet <strong>Mirai</strong> (2016) a paralysé une partie d'Internet en exploitant des caméras et routeurs mal sécurisés.</p>
+                    <div class="menace-niveau niveau-critique">Critique</div>
+                </div>
+
+                <div class="menace-card">
+                    <div class="menace-icon">🔓</div>
+                    <h3>Mots de passe par défaut</h3>
+                    <p>La majorité des appareils IoT sont livrés avec des identifiants par défaut (<strong>admin/admin</strong>) que les utilisateurs ne changent jamais, laissant une porte ouverte aux attaquants.</p>
+                    <div class="menace-niveau niveau-eleve">Élevé</div>
+                </div>
+
+                <div class="menace-card">
+                    <div class="menace-icon">📡</div>
+                    <h3>Communications non chiffrées</h3>
+                    <p>98% du trafic IoT circule en clair sur le réseau. Un attaquant en position d'écoute peut intercepter des données sensibles comme des vidéos, données médicales ou informations personnelles.</p>
+                    <div class="menace-niveau niveau-eleve">Élevé</div>
+                </div>
+
+                <div class="menace-card">
+                    <div class="menace-icon">🔧</div>
+                    <h3>Absence de mises à jour</h3>
+                    <p>Beaucoup de fabricants n'assurent pas de support à long terme. Les failles de sécurité restent non corrigées pendant des années, exposant les appareils à des vulnérabilités connues.</p>
+                    <div class="menace-niveau niveau-eleve">Élevé</div>
+                </div>
+
+                <div class="menace-card">
+                    <div class="menace-icon">💉</div>
+                    <h3>Injection de commandes</h3>
+                    <p>Les interfaces web des appareils IoT sont souvent vulnérables aux injections de commandes, permettant à un attaquant de prendre le contrôle complet de l'appareil à distance.</p>
+                    <div class="menace-niveau niveau-critique">Critique</div>
+                </div>
+
+                <div class="menace-card">
+                    <div class="menace-icon">🕵️</div>
+                    <h3>Espionnage & vie privée</h3>
+                    <p>Les objets connectés (assistants vocaux, caméras, montres) collectent en permanence des données personnelles. Des failles permettent à des tiers malveillants d'accéder à ces flux.</p>
+                    <div class="menace-niveau niveau-moyen">Moyen</div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- EXEMPLES RÉELS -->
+    <div class="veille-section bg-white">
+        <div class="veille-section-inner">
+            <div class="veille-section-label">03 — Cas Concrets</div>
+            <h2>Attaques IoT réelles marquantes</h2>
+            <div class="cas-timeline">
+
+                <div class="cas-item">
+                    <div class="cas-date">2016</div>
+                    <div class="cas-content">
+                        <h3>🌐 Attaque Mirai — DDoS massif</h3>
+                        <p>Le botnet Mirai a infecté plus de <strong>600 000 appareils IoT</strong> (caméras, DVR) avec des identifiants par défaut. Il a généré une attaque DDoS de 1,2 Tbps, coupant l'accès à Twitter, Netflix et Reddit pendant plusieurs heures.</p>
+                        <div class="cas-tags"><span>Botnet</span><span>DDoS</span><span>Caméras IP</span></div>
+                    </div>
+                </div>
+
+                <div class="cas-item">
+                    <div class="cas-date">2021</div>
+                    <div class="cas-content">
+                        <h3>🏥 Attaque hôpital — Pompes médicales</h3>
+                        <p>Des chercheurs ont découvert des vulnérabilités critiques dans des pompes à perfusion connectées permettant à un attaquant de <strong>modifier les doses de médicaments</strong> à distance, mettant en danger la vie des patients.</p>
+                        <div class="cas-tags"><span>Médical</span><span>Critique</span><span>Vie humaine</span></div>
+                    </div>
+                </div>
+
+                <div class="cas-item">
+                    <div class="cas-date">2023</div>
+                    <div class="cas-content">
+                        <h3>🏠 Caméras Eufy — Fuite de données</h3>
+                        <p>Des millions de caméras de surveillance domestiques Eufy ont exposé les flux vidéo de leurs utilisateurs en ligne <strong>sans authentification</strong>, accessibles par n'importe qui connaissant l'URL.</p>
+                        <div class="cas-tags"><span>Vie privée</span><span>Caméras</span><span>Données personnelles</span></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- SOLUTIONS -->
+    <div class="veille-section bg-blue">
+        <div class="veille-section-inner">
+            <div class="veille-section-label">04 — Solutions</div>
+            <h2>Comment se protéger ?</h2>
+            <div class="solutions-grid">
+
+                <div class="solution-card">
+                    <div class="solution-number">01</div>
+                    <h3>Changer les mots de passe par défaut</h3>
+                    <p>Dès l'installation d'un appareil IoT, changer immédiatement les identifiants par défaut par des mots de passe forts et uniques.</p>
+                </div>
+
+                <div class="solution-card">
+                    <div class="solution-number">02</div>
+                    <h3>Segmenter le réseau</h3>
+                    <p>Isoler les appareils IoT sur un VLAN dédié, séparé du réseau principal. Ainsi, si un appareil est compromis, l'attaquant ne peut pas accéder au reste du réseau.</p>
+                </div>
+
+                <div class="solution-card">
+                    <div class="solution-number">03</div>
+                    <h3>Mettre à jour régulièrement</h3>
+                    <p>Appliquer les mises à jour firmware dès leur disponibilité. Remplacer les appareils dont le fabricant ne publie plus de correctifs de sécurité.</p>
+                </div>
+
+                <div class="solution-card">
+                    <div class="solution-number">04</div>
+                    <h3>Chiffrer les communications</h3>
+                    <p>Privilégier les appareils utilisant des protocoles chiffrés (TLS, DTLS, MQTT over TLS) pour sécuriser les échanges de données.</p>
+                </div>
+
+                <div class="solution-card">
+                    <div class="solution-number">05</div>
+                    <h3>Désactiver les fonctions inutiles</h3>
+                    <p>Désactiver UPnP, Telnet, les ports ouverts non utilisés et toute fonctionnalité non nécessaire qui augmente la surface d'attaque.</p>
+                </div>
+
+                <div class="solution-card">
+                    <div class="solution-number">06</div>
+                    <h3>Surveiller le trafic réseau</h3>
+                    <p>Utiliser des outils comme Wireshark ou un IDS/IPS pour monitorer le trafic IoT et détecter des comportements anormaux ou des communications suspectes.</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- SOURCES -->
+    <div class="veille-section bg-white">
+        <div class="veille-section-inner">
+            <div class="veille-section-label">05 — Sources</div>
+            <h2>Mes sources de veille</h2>
+            <p class="sources-intro">Pour réaliser cette veille, j'ai consulté régulièrement les sources suivantes :</p>
+            <div class="sources-grid">
+
+                <a href="https://www.cert.ssi.gouv.fr" target="_blank" class="source-card">
+                    <div class="source-icon">🛡️</div>
+                    <div class="source-info">
+                        <h3>ANSSI / CERT-FR</h3>
+                        <p>Alertes et bulletins de sécurité officiels du gouvernement français</p>
+                    </div>
+                    <span class="source-arrow">→</span>
+                </a>
+
+                <a href="https://www.cvedetails.com" target="_blank" class="source-card">
+                    <div class="source-icon">🔍</div>
+                    <div class="source-info">
+                        <h3>CVE Details</h3>
+                        <p>Base de données des vulnérabilités connues et exploits IoT</p>
+                    </div>
+                    <span class="source-arrow">→</span>
+                </a>
+
+                <a href="https://www.lemondeinformatique.fr" target="_blank" class="source-card">
+                    <div class="source-icon">📰</div>
+                    <div class="source-info">
+                        <h3>Le Monde Informatique</h3>
+                        <p>Actualités cybersécurité et nouvelles menaces IoT</p>
+                    </div>
+                    <span class="source-arrow">→</span>
+                </a>
+
+                <a href="https://www.kaspersky.fr/blog" target="_blank" class="source-card">
+                    <div class="source-icon">🔒</div>
+                    <div class="source-info">
+                        <h3>Kaspersky Blog</h3>
+                        <p>Analyses techniques et rapports sur les malwares IoT</p>
+                    </div>
+                    <span class="source-arrow">→</span>
+                </a>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- CONCLUSION -->
+    <div class="veille-conclusion">
+        <div class="veille-conclusion-inner">
+            <h2>Conclusion</h2>
+            <p>La sécurité des objets connectés est un enjeu majeur de notre époque. Avec des milliards d'appareils déployés dans des environnements critiques — hôpitaux, industries, foyers — les conséquences d'une attaque peuvent être dramatiques. En tant que futur administrateur réseau, comprendre ces menaces et savoir segmenter, surveiller et sécuriser un réseau incluant des objets IoT est une compétence essentielle.</p>
+            <div class="conclusion-badge">🎓 Réalisé dans le cadre du BTS SIO SISR — Lycée Gustave Eiffel, Bordeaux</div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
