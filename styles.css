@@ -568,7 +568,8 @@
     border-radius: 10px;
 }
 
-/* ======= PAGE CONTACT ======= */
+Voilà le fichier styles.css partie contact, propre et sans doublon :
+css/* ======= PAGE CONTACT ======= */
 
 .main-content.contact-page {
     display: flex;
@@ -641,6 +642,7 @@
     font-size: 13px;
 }
 
+/* ---- SECTION CONTACT ---- */
 .contact-section {
     width: 100%;
     padding: 60px 80px;
@@ -650,6 +652,7 @@
     border-image: linear-gradient(90deg, transparent, #0d6efd, #D8532B, transparent) 1;
 }
 
+/* ---- GRILLE CONTACT ---- */
 .contact-grid {
     display: flex;
     gap: 30px;
@@ -658,6 +661,16 @@
     position: relative;
 }
 
+.contact-grid::after {
+    content: "";
+    display: block;
+    width: 60%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #e0e0e0, transparent);
+    margin: 20px auto 0 auto;
+}
+
+/* ---- CARTES ---- */
 .contact-card {
     display: flex;
     align-items: center;
@@ -670,6 +683,7 @@
     color: inherit;
     transition: transform 0.2s, box-shadow 0.2s;
     cursor: pointer;
+    flex-shrink: 0;
 }
 
 .contact-card-linkedin {
@@ -715,6 +729,9 @@
 .contact-card-cv {
     border: 2px solid #00d4aa;
     box-shadow: 0 0 12px rgba(0,212,170,0.35);
+    flex-basis: auto;
+    max-width: 300px;
+    margin: 0;
 }
 
 .contact-card-cv:hover {
@@ -783,35 +800,6 @@
     margin: 0 auto 60px auto;
 }
 
-/* Ligne décorative sous le titre mentions légales */
-.mentions-header h2::after {
-    content: "";
-    display: block;
-    width: 60px;
-    height: 3px;
-    background: linear-gradient(90deg, #D8532B, #a855f7);
-    margin: 10px auto 0 auto;
-    border-radius: 2px;
-}
-
-/* Petit trait décoratif entre les cartes contact */
-.contact-grid {
-    display: flex;
-    gap: 30px;
-    justify-content: center;
-    flex-wrap: wrap;
-    position: relative;
-}
-
-.contact-grid::after {
-    content: "";
-    display: block;
-    width: 60%;
-    height: 1px;
-    background: linear-gradient(90deg, transparent, #e0e0e0, transparent);
-    margin: 20px auto 0 auto;
-}
-
 .mentions-header {
     text-align: center;
     margin-bottom: 50px;
@@ -821,6 +809,16 @@
     color: #D8532B;
     font-size: 38px;
     margin: 0 0 10px 0;
+}
+
+.mentions-header h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(90deg, #D8532B, #a855f7);
+    margin: 10px auto 0 auto;
+    border-radius: 2px;
 }
 
 .mentions-underline {
