@@ -1,0 +1,242 @@
+/* ======= CARTES PROJETS - NOUVEAU STYLE ======= */
+
+/* ---- GRILLE ---- */
+.real-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 220px);
+    gap: 24px;
+    justify-content: center;
+}
+
+.real-grid-center {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+/* ---- CARTE ---- */
+.real-card-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.real-card {
+    width: 220px;
+    border-radius: 16px;
+    overflow: hidden;
+    background: linear-gradient(160deg, #1a4a8a 0%, #1a3a6e 100%);
+  border: 2px solid #ff2d78;
+box-shadow: 0 4px 20px rgba(0,0,0,0.35), 0 0 12px rgba(255,45,120,0.6), 0 0 25px rgba(255,45,120,0.25);
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+}
+
+.real-card:hover {
+    transform: translateY(-7px);
+    border-color: #4d9fff; /* ← bleu lumineux au hover */
+    box-shadow: 0 16px 36px rgba(0,0,0,0.4), 0 0 20px rgba(13,110,253,0.8), 0 0 40px rgba(13,110,253,0.4);
+}
+
+/* ---- ZONE IMAGE / COVER ---- */
+.real-photo {
+    width: 100%;
+    height: 130px;
+    background: linear-gradient(145deg, #1a5a9e 0%, #1a4a8a 50%, #1a3a6e 100%); /* ← bleu clair */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    flex-shrink: 0;
+}
+
+.real-photo::after {
+    content: "💻";
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #0d6efd;
+    border-radius: 8px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    line-height: 30px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(13,110,253,0.5);
+}
+
+.real-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
+}
+
+.real-photo img[src]:not([src=""]) {
+    display: block;
+}
+
+.real-photo-placeholder {
+    font-size: 52px;
+    opacity: 0.25;
+    transition: opacity 0.2s;
+    filter: grayscale(1);
+}
+
+/* Overlay hover */
+.real-card-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(13,110,253,0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.2s;
+    backdrop-filter: blur(2px);
+}
+
+.real-card-overlay span {
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.real-card:hover .real-card-overlay {
+    opacity: 1;
+}
+
+.real-card:hover .real-photo-placeholder {
+    opacity: 0.08;
+}
+
+/* ---- BODY DE LA CARTE ---- */
+.real-card-body {
+    padding: 14px 14px 0 14px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Tags */
+.real-card-tags {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.real-card-tag {
+    font-size: 10px;
+    font-weight: 600;
+    color: #ffffff;
+    background: rgba(255,255,255,0.2);
+    border: 1px solid rgba(255,255,255,0.4);
+    border-radius: 20px;
+    padding: 2px 9px;
+    letter-spacing: 0.3px;
+    backdrop-filter: blur(2px);
+}
+
+.real-card-tag-more {
+    font-size: 10px;
+    font-weight: 600;
+    color: #00cfff;
+    background: rgba(0,170,255,0.25);
+    border: 1px solid rgba(0,207,255,0.5);
+    border-radius: 20px;
+    padding: 2px 8px;
+}
+
+/* Titre */
+.real-label {
+    font-size: 16px;
+    font-weight: 800;
+    color: #ffffff;
+    margin: 0 0 5px 0;
+    padding: 0;
+    background: none;
+    border: none;
+    letter-spacing: 0.3px;
+    line-height: 1.2;
+    text-align: left;
+}
+
+/* Description */
+.real-card-desc {
+    font-size: 12px;
+    color: rgba(255,255,255,0.8);
+    line-height: 1.5;
+    margin-bottom: 12px;
+    flex: 1;
+}
+
+/* Bouton Documents */
+.real-card-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    background: rgba(13,110,253,0.3);
+    border: 1.5px solid rgba(0,170,255,0.6);
+    color: #ffffff;
+    padding: 8px 14px;
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 14px;
+    transition: background 0.2s, border-color 0.2s;
+    width: fit-content;
+}
+
+.real-card:hover .real-card-btn {
+    background: rgba(13,110,253,0.25);
+    border-color: rgba(0,207,255,0.7);
+}
+
+/* ---- STAGE CARD ---- */
+.real-card-stage {
+    width: 240px;
+}
+
+.real-card-stage .real-photo {
+    height: 150px;
+}
+
+/* ======= RESPONSIVE ======= */
+@media (max-width: 1024px) {
+    .real-grid {
+        grid-template-columns: repeat(2, 220px);
+    }
+}
+
+@media (max-width: 768px) {
+    .real-grid {
+        grid-template-columns: repeat(2, 180px);
+        gap: 16px;
+    }
+
+    .real-card {
+        width: 180px;
+    }
+
+    .real-grid-center {
+        gap: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .real-grid {
+        grid-template-columns: repeat(1, 220px);
+    }
+
+    .real-card {
+        width: 220px;
+    }
+}

@@ -122,6 +122,8 @@
     justify-content: center;
     gap: 40px;
     flex-wrap: wrap;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255,255,255,0.15);
 }
 
 .veille-stat {
@@ -157,11 +159,23 @@
 }
 
 .veille-section.bg-white {
-    background: #ffffff;
+    border-top: 3px solid transparent;
+    border-image: linear-gradient(90deg, transparent, #0d6efd, #D8532B, transparent) 1;
 }
 
 .veille-section.bg-blue {
-    background: #f5f8fd;
+    border-top: 3px solid transparent;
+    border-image: linear-gradient(90deg, transparent, #a855f7, #0d6efd, transparent) 1;
+}
+
+.veille-section h2::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: linear-gradient(90deg, #D8532B, #0d6efd);
+    margin-top: 12px;
+    border-radius: 2px;
 }
 
 .veille-section-inner {
@@ -314,8 +328,9 @@
     flex-direction: column;
     gap: 30px;
     position: relative;
+    border-left: 3px solid transparent;
+    border-image: linear-gradient(180deg, #0d6efd, #a855f7, #D8532B) 1;
     padding-left: 20px;
-    border-left: 3px solid #e0e8ff;
 }
 
 .cas-item {
@@ -414,9 +429,12 @@
 .solution-number {
     font-size: 42px;
     font-weight: bold;
-    color: rgba(0, 212, 170, 0.2);
+    color: rgba(0,212,170,0.2);
     line-height: 1;
     margin-bottom: 12px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid rgba(0,212,170,0.2);
+    width: fit-content;
 }
 
 .solution-card h3 {
@@ -442,6 +460,9 @@
     display: flex;
     flex-direction: column;
     gap: 16px;
+    padding-top: 10px;
+    border-top: 2px solid transparent;
+    border-image: linear-gradient(90deg, transparent, #a855f7, transparent) 1;
 }
 
 .source-card {
