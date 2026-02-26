@@ -210,6 +210,13 @@ box-shadow: 0 4px 20px rgba(0,0,0,0.35), 0 0 12px rgba(255,45,120,0.6), 0 0 25px
 }
 
 /* ======= RESPONSIVE ======= */
+
+@media (max-width: 1280px) {
+    .real-grid {
+        grid-template-columns: repeat(3, 220px);
+    }
+}
+
 @media (max-width: 1024px) {
     .real-grid {
         grid-template-columns: repeat(2, 220px);
@@ -218,25 +225,52 @@ box-shadow: 0 4px 20px rgba(0,0,0,0.35), 0 0 12px rgba(255,45,120,0.6), 0 0 25px
 
 @media (max-width: 768px) {
     .real-grid {
-        grid-template-columns: repeat(2, 180px);
+        grid-template-columns: repeat(2, 170px);
         gap: 16px;
     }
 
     .real-card {
-        width: 180px;
+        width: 170px;
+    }
+
+    .real-card-stage {
+        width: 170px;
     }
 
     .real-grid-center {
         gap: 16px;
     }
+
+    .real-label {
+        font-size: 14px;
+    }
+
+    .real-card-btn {
+        font-size: 11px;
+        padding: 6px 10px;
+    }
 }
 
 @media (max-width: 480px) {
     .real-grid {
-        grid-template-columns: repeat(1, 220px);
+        grid-template-columns: repeat(1, 200px);
     }
 
     .real-card {
-        width: 220px;
+        width: 200px;
+    }
+
+    .real-card-stage {
+        width: 200px;
+    }
+}
+
+@media (max-width: 360px) {
+    .real-grid {
+        grid-template-columns: repeat(1, 160px);
+    }
+
+    .real-card {
+        width: 160px;
     }
 }

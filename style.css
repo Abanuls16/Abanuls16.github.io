@@ -615,7 +615,28 @@ body {
 /* RESPONSIVE */
 /* ============================= */
 
+/* ---- TABLETTE PAYSAGE / GRAND ÉCRAN ---- */
+@media (max-width: 1280px) {
+    .sio-wrapper {
+        max-width: 100%;
+        padding: 0 30px;
+    }
+
+    .sio-image img {
+        width: 200px;
+    }
+
+    .certif-grid {
+        max-width: 700px;
+    }
+}
+
+/* ---- TABLETTE ---- */
 @media (max-width: 1024px) {
+
+    body {
+        flex-direction: column;
+    }
 
     .sidebar {
         width: 100%;
@@ -624,10 +645,11 @@ body {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 10px 20px;
+        padding: 12px 20px;
         flex-direction: row;
         flex-wrap: wrap;
         box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        box-sizing: border-box;
     }
 
     .sidebar h2 {
@@ -656,11 +678,13 @@ body {
         margin-left: 0;
         width: 100%;
         padding: 16px;
+        box-sizing: border-box;
     }
 
     .main-content.accueil {
         margin-left: 0;
         width: 100%;
+        min-height: calc(100vh - 60px);
     }
 
     .apropos-container {
@@ -686,6 +710,12 @@ body {
 
     .sio-image {
         padding-top: 0;
+        margin-top: 0;
+        justify-content: center;
+    }
+
+    .sio-image img {
+        width: 180px;
     }
 
     .section-sio,
@@ -698,7 +728,7 @@ body {
     }
 
     .certif-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
         max-width: 100%;
     }
 
@@ -712,119 +742,85 @@ body {
     }
 }
 
+/* ---- MOBILE PAYSAGE / PETITE TABLETTE ---- */
 @media (max-width: 768px) {
 
-    .apropos-hero-content h1,
-    .real-hero-content h1,
-    .contact-hero-content h1 {
+    .apropos-hero {
+        height: auto;
+        min-height: 200px;
+        padding: 30px 20px;
+    }
+
+    .apropos-hero-content h1 {
         font-size: 28px;
     }
 
-    .apropos-hero-content p,
-    .real-hero-content p,
-    .contact-hero-content p {
+    .apropos-hero-content p {
         font-size: 14px;
     }
 
-    .badge-apropos,
-    .badge,
-    .badge-contact {
+    .badge-apropos {
         font-size: 11px;
         padding: 4px 10px;
     }
 
-    .real-stats {
-        flex-wrap: wrap;
+    .certif-grid {
+        grid-template-columns: 1fr;
     }
 
-    .stat-card {
-        flex: 1 1 50%;
-        border-bottom: 1px solid rgba(255,255,255,0.1);
+    .certif-card {
+        flex-direction: row;
     }
 
-    .real-grid {
-        grid-template-columns: repeat(2, 160px);
-        gap: 20px;
+    .sio-badges {
+        gap: 10px;
     }
 
-    .real-grid-center {
-        gap: 20px;
+    .sio-badge {
+        padding: 8px 14px;
     }
 
-    .real-card {
-        width: 160px;
+    .competences-subtitle {
+        font-size: 20px;
+        margin-left: 10px;
     }
 
-    .contact-grid {
-        flex-direction: column;
-        align-items: center;
+    .competences-desc {
+        margin-left: 10px;
+        font-size: 14px;
     }
 
-    .contact-card {
-        width: 100%;
-        max-width: 360px;
-    }
-
-    .mentions-grid {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .mentions-card {
-        width: 100%;
-        max-width: 360px;
-    }
-
-    .ap-infos {
-        flex-direction: column;
-    }
-
-    .ap-content {
-        padding: 20px;
-    }
-
-    .real-section {
-        padding: 40px 20px;
-    }
-
-    .real-titre-rouge {
-        font-size: 16px;
-        padding: 10px 16px;
-    }
-
-    .sio-wrapper {
-        flex-direction: column;
-        align-items: center;
+    .section-sio h2,
+    .section-certifications h2,
+    .section-competences h2 {
+        font-size: 36px;
     }
 }
 
+/* ---- MOBILE PORTRAIT ---- */
 @media (max-width: 480px) {
 
+    .sidebar nav ul li a {
+        font-size: 11px;
+        padding: 5px 8px;
+    }
+
     .hero-text .name {
-        font-size: 36px;
-        line-height: 40px;
+        font-size: 32px;
+        line-height: 36px;
     }
 
     .hero-text .welcome {
-        font-size: 20px;
+        font-size: 18px;
     }
 
-    .real-grid {
-        grid-template-columns: repeat(1, 200px);
+    .apropos-hero-content h1 {
+        font-size: 22px;
     }
 
-    .competences-grid {
-        gap: 12px;
-    }
-
-    .competence-card {
-        width: 110px;
-        padding: 16px 10px;
-    }
-
-    .competence-card img {
-        width: 50px;
-        height: 50px;
+    .certif-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
     }
 
     .certif-card {
@@ -832,9 +828,56 @@ body {
         text-align: center;
     }
 
+    .certif-icon {
+        margin: 0 auto;
+    }
+
+    .competence-card {
+        width: 100px;
+        padding: 14px 8px;
+    }
+
+    .competence-card img {
+        width: 45px;
+        height: 45px;
+    }
+
+    .competence-card p {
+        font-size: 11px;
+    }
+
     .section-sio h2,
     .section-certifications h2,
     .section-competences h2 {
-        font-size: 32px;
+        font-size: 28px;
+    }
+
+    .sio-image img {
+        width: 140px;
+    }
+
+    .sio-badge-text {
+        font-size: 12px;
+    }
+}
+
+/* ---- TRÈS PETIT MOBILE ---- */
+@media (max-width: 360px) {
+
+    .sidebar h2 {
+        font-size: 14px;
+    }
+
+    .sidebar nav ul li a {
+        font-size: 10px;
+        padding: 4px 6px;
+    }
+
+    .hero-text .name {
+        font-size: 26px;
+    }
+
+    .competence-card {
+        width: 85px;
     }
 }
