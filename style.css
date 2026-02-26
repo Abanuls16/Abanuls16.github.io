@@ -273,12 +273,33 @@ body {
     margin: 0;
 }
 
+.sio-top {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.sio-subtitle {
+    color: #888;
+    font-size: 15px;
+    font-style: italic;
+    margin-top: 8px;
+}
+
+/* Wrapper flex texte + logo */
+.sio-wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 60px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
 .sio-content {
-    max-width: 800px;
-    margin: 40px auto 0 auto;
+    flex: 1;
     text-align: left;
-    margin-top: 60px;
-    margin-left: 230px;
+    margin: 0;
 }
 
 .sio-content h3 {
@@ -308,20 +329,56 @@ body {
     line-height: 2;
 }
 
-.sio-metiers {
-    display: flex;
-    align-items: center;
-    gap: 40px;
-}
-
+/* Logo à droite */
 .sio-image {
-    margin-left: auto;
-    margin-right: 400px;
-    margin-top: -260px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: flex-end; /* ← aligne en bas */
+    margin-top: auto;
+    padding-bottom: 20px;
 }
 
 .sio-image img {
-    width: 320px;
+    width: 260px;
+}
+
+
+
+/* Badges */
+.sio-badges {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.sio-badge {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #ffffff;
+    border: 2px solid #0d6efd;
+    box-shadow: 0 0 10px rgba(13, 110, 253, 0.2);
+    border-radius: 30px;
+    padding: 10px 20px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.sio-badge:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 16px rgba(13, 110, 253, 0.35);
+}
+
+.sio-badge-icon {
+    font-size: 18px;
+}
+
+.sio-badge-text {
+    font-size: 14px;
+    font-weight: bold;
+    color: #1a2e5a;
 }
 
 /* ============================= */
@@ -509,15 +566,230 @@ body {
     letter-spacing: 0.5px;
 }
 
+/* ============================= */
+/* RESPONSIVE */
+/* ============================= */
 
+@media (max-width: 1024px) {
 
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 20px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
 
+    .sidebar h2 {
+        margin: 0;
+        font-size: 18px;
+    }
 
+    .sidebar nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+        margin: 0;
+        padding: 0;
+    }
 
+    .sidebar nav ul li {
+        margin: 0;
+    }
 
+    .sidebar nav ul li a {
+        padding: 6px 12px;
+        font-size: 13px;
+    }
 
+    .main-content {
+        margin-left: 0;
+        width: 100%;
+        padding: 16px;
+    }
 
+    .main-content.accueil {
+        margin-left: 0;
+        width: 100%;
+    }
 
+    .apropos-container {
+        flex-direction: column;
+        padding: 0 20px;
+        margin-top: 30px;
+        gap: 30px;
+    }
 
+    .apropos-container .left,
+    .apropos-container .right {
+        width: 100%;
+        padding-left: 0;
+        margin-right: 0;
+    }
 
+    .sio-wrapper {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 20px;
+        gap: 30px;
+    }
 
+    .sio-image {
+        padding-top: 0;
+    }
+
+    .section-sio,
+    .section-certifications,
+    .section-competences {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 40px 20px;
+    }
+
+    .certif-grid {
+        grid-template-columns: 1fr;
+        max-width: 100%;
+    }
+
+    .competences-subtitle {
+        margin-left: 20px;
+    }
+
+    .competences-desc {
+        margin-left: 20px;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .apropos-hero-content h1,
+    .real-hero-content h1,
+    .contact-hero-content h1 {
+        font-size: 28px;
+    }
+
+    .apropos-hero-content p,
+    .real-hero-content p,
+    .contact-hero-content p {
+        font-size: 14px;
+    }
+
+    .badge-apropos,
+    .badge,
+    .badge-contact {
+        font-size: 11px;
+        padding: 4px 10px;
+    }
+
+    .real-stats {
+        flex-wrap: wrap;
+    }
+
+    .stat-card {
+        flex: 1 1 50%;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .real-grid {
+        grid-template-columns: repeat(2, 160px);
+        gap: 20px;
+    }
+
+    .real-grid-center {
+        gap: 20px;
+    }
+
+    .real-card {
+        width: 160px;
+    }
+
+    .contact-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-card {
+        width: 100%;
+        max-width: 360px;
+    }
+
+    .mentions-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mentions-card {
+        width: 100%;
+        max-width: 360px;
+    }
+
+    .ap-infos {
+        flex-direction: column;
+    }
+
+    .ap-content {
+        padding: 20px;
+    }
+
+    .real-section {
+        padding: 40px 20px;
+    }
+
+    .real-titre-rouge {
+        font-size: 16px;
+        padding: 10px 16px;
+    }
+
+    .sio-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .hero-text .name {
+        font-size: 36px;
+        line-height: 40px;
+    }
+
+    .hero-text .welcome {
+        font-size: 20px;
+    }
+
+    .real-grid {
+        grid-template-columns: repeat(1, 200px);
+    }
+
+    .competences-grid {
+        gap: 12px;
+    }
+
+    .competence-card {
+        width: 110px;
+        padding: 16px 10px;
+    }
+
+    .competence-card img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .certif-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .section-sio h2,
+    .section-certifications h2,
+    .section-competences h2 {
+        font-size: 32px;
+    }
+}
