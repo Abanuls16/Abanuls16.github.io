@@ -945,6 +945,7 @@
     }
 
     .contact-grid {
+        display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
     }
@@ -954,10 +955,10 @@
     }
 
     .contact-card-cv {
-        flex-basis: 100% !important;
-    max-width: 300px !important;
-    margin: 0 auto !important;
-    width: 100% !important;
+        grid-column: 1 / -1;
+        max-width: 360px;
+        margin: 0 auto;
+        width: 100%;
     }
 }
 
@@ -1013,6 +1014,7 @@
     }
 
     .contact-grid {
+        display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 16px;
     }
@@ -1023,10 +1025,10 @@
     }
 
     .contact-card-cv {
-        flex-basis: 100% !important;
-    max-width: 300px !important;
-    margin: 0 auto !important;
-    width: 100% !important;
+        grid-column: 1 / -1;
+        max-width: 300px;
+        margin: 0 auto;
+        width: 100%;
     }
 
     .mentions-grid {
@@ -1083,8 +1085,9 @@
     }
 
     .contact-grid {
+        display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 14px;
+        gap: 12px;
     }
 
     .contact-card {
@@ -1093,10 +1096,10 @@
     }
 
     .contact-card-cv {
-        flex-basis: 100% !important;
-    max-width: 300px !important;
-    margin: 0 auto !important;
-    width: 100% !important;
+        grid-column: 1 / -1;
+        max-width: 280px;
+        margin: 0 auto;
+        width: 100%;
     }
 
     .contact-card-icon {
@@ -1151,13 +1154,14 @@
     }
 
     .contact-grid {
-        grid-template-columns: 1fr;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
     }
 
     .contact-card-cv {
-        flex-basis: 100% !important;
-    max-width: 300px !important;
-    margin: 0 auto !important;
-    width: 100% !important;
+        grid-column: 1 / -1;
+        max-width: 100%;
+        margin: 0 auto;
     }
 }
