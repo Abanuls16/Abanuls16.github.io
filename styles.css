@@ -654,9 +654,9 @@
 /* ---- GRILLE CONTACT ---- */
 .contact-grid {
     display: flex;
-    flex-wrap: wrap;
     gap: 30px;
     justify-content: center;
+    flex-wrap: wrap;
     position: relative;
 }
 
@@ -667,7 +667,6 @@
     height: 1px;
     background: linear-gradient(90deg, transparent, #e0e0e0, transparent);
     margin: 20px auto 0 auto;
-    flex-basis: 100%;
 }
 
 /* ---- CARTES ---- */
@@ -679,11 +678,11 @@
     border-radius: 16px;
     padding: 28px 32px;
     width: 300px;
-    flex-shrink: 0;
     text-decoration: none;
     color: inherit;
     transition: transform 0.2s, box-shadow 0.2s;
     cursor: pointer;
+    flex-shrink: 0;
 }
 
 .contact-card-linkedin {
@@ -729,9 +728,9 @@
 .contact-card-cv {
     border: 2px solid #00d4aa;
     box-shadow: 0 0 12px rgba(0,212,170,0.35);
-    flex-basis: 100%;
+    flex-basis: auto;
     max-width: 300px;
-    margin: 0 auto;
+    margin: 0;
 }
 
 .contact-card-cv:hover {
@@ -943,23 +942,9 @@
         padding: 40px 20px 60px 20px;
     }
 
-    .contact-grid {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 16px;
-    }
-
     .contact-card {
-        width: 100%;
-        max-width: 500px;
-    }
-
-    .contact-card-cv {
-        width: 100%;
-        max-width: 500px;
-        margin: 0 auto;
-        flex-basis: auto;
+        width: 260px;
+        padding: 20px 24px;
     }
 }
 
@@ -1015,23 +1000,13 @@
     }
 
     .contact-grid {
-        display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 16px;
     }
 
     .contact-card {
         width: 100%;
-        max-width: 500px;
-        padding: 20px;
-    }
-
-    .contact-card-cv {
-        width: 100%;
-        max-width: 500px;
-        margin: 0 auto;
-        flex-basis: auto;
+        max-width: 400px;
     }
 
     .mentions-grid {
@@ -1087,51 +1062,18 @@
         flex: 1 1 100%;
     }
 
-    .contact-grid {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 12px;
-    }
-
     .contact-card {
-        width: 100%;
-        max-width: 400px;
+        flex-direction: column;
+        text-align: center;
         padding: 20px;
     }
 
-    .contact-card-cv {
-        width: 100%;
-        max-width: 400px;
-        margin: 0 auto;
-        flex-basis: auto;
-    }
-
     .contact-card-icon {
-        width: 40px;
-        height: 40px;
-    }
-
-    .contact-card-icon img {
-        width: 35px;
-        height: 35px;
-    }
-
-    .contact-emoji {
-        font-size: 30px;
-    }
-
-    .contact-card-info h3 {
-        font-size: 15px;
-    }
-
-    .contact-card-info p {
-        font-size: 12px;
+        margin: 0 auto;
     }
 
     .mentions-card {
         padding: 20px;
-        width: 100%;
     }
 
     .ap-hero-content h1 {
@@ -1156,23 +1098,5 @@
 
     .mentions-section {
         padding: 30px 12px;
-    }
-
-    .contact-grid {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-    }
-
-    .contact-card {
-        width: 100%;
-        max-width: 100%;
-        padding: 16px;
-    }
-
-    .contact-card-cv {
-        max-width: 100%;
-        margin: 0 auto;
     }
 }
