@@ -882,6 +882,12 @@
         padding: 60px 40px;
     }
 
+    .contact-card-cv {
+        flex-basis: 100% !important;
+        max-width: 300px !important;
+        margin: 0 auto !important;
+    }
+
     .real-grid {
         grid-template-columns: repeat(3, 220px);
     }
