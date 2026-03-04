@@ -728,9 +728,9 @@
 .contact-card-cv {
     border: 2px solid #00d4aa;
     box-shadow: 0 0 12px rgba(0,212,170,0.35);
-    flex-basis: auto;
+    flex-basis: 100%;
     max-width: 300px;
-    margin: 0;
+    margin: 0 auto !important;
 }
 
 .contact-card-cv:hover {
@@ -904,6 +904,12 @@
         padding: 40px 20px;
     }
 
+    .contact-card-cv {
+        flex-basis: 100% !important;
+        max-width: 300px !important;
+        margin: 0 auto !important;
+    }
+
     .real-hero-content h1 {
         font-size: 32px;
     }
@@ -955,6 +961,12 @@
     .ap-hero-content h1,
     .contact-hero-content h1 {
         font-size: 24px;
+    }
+
+     .contact-card-cv {
+        flex-basis: 100% !important;
+        max-width: 300px !important;
+        margin: 0 auto !important;
     }
 
     .real-hero-content p,
@@ -1045,6 +1057,12 @@
         font-size: 20px;
     }
 
+    .contact-card-cv {
+        flex-basis: 100% !important;
+        max-width: 300px !important;
+        margin: 0 auto !important;
+    }
+
     .real-grid {
         grid-template-columns: repeat(1, 200px);
         gap: 16px;
@@ -1098,5 +1116,11 @@
 
     .mentions-section {
         padding: 30px 12px;
+    }
+
+    .contact-card-cv {
+        flex-basis: 100% !important;
+        max-width: 100% !important;
+        margin: 0 auto !important;
     }
 }
