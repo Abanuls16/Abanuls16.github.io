@@ -706,13 +706,13 @@
 }
 
 .contact-card-location {
-    border: 2px solid #00d4aa;
-    box-shadow: 0 0 12px rgba(0,212,170,0.35);
+    border: 2px solid #ffd700;
+    box-shadow: 0 0 12px rgba(255,215,0,0.35);
 }
 
 .contact-card-location:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 24px rgba(0,212,170,0.5);
+    box-shadow: 0 8px 24px rgba(255,215,0,0.5);
 }
 
 .contact-card-github {
